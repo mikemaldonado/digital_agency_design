@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i');
+@import "global_variables";
+
+
+@import "bootstrap";
+@import "font-awesome";
+@import "mixins";
+@import "variables";
+
+h1, h2, h3, h4, h5, h6 {
+	margin:0 0 35px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-family:$montseratt-family;
+}
+
+p {
+	margin:0 0 25px;
+	font-size:$paragraph-font-size;
+	line-height:1.6;
+}
+
+.navbar {
+	border-bottom:1px solid rgba(255,255,255,0.3);
+	text-transform:uppercase;
+	font-family:$montseratt-family;
+	@include tablet {
+		padding:20px 0;
+		border-bottom:none;
+		background:transparent;
+		transition:background .5s ease-in-out, padding .5s ease-in-out;
+	}
+}
+
+.navbar-brand {
+	font-weight:700;
+}
+
+.navbar-default .nav li a {
+	transition: background .3s ease-in-out;
+}
+
+.navbar-toggle {
+	padding:4px 6px;
+	font-size:16px;
+}
+
+.top-nav-collapse {
+	padding:0;
+	background-color: $navbar-default-bg;
+	
+}
+
+.intro {
+	display:table;
+	width:100%;
+	height: auto;
+	padding:100px 0;
+	text-align:center;
+	color:$custom-light;
+	background: url('../img/intro-bg.webp') no-repeat center bottom scroll;
+	background-color: $custom-dark;
+	background-size: cover;
+	@include tablet {
+		height:100%;
+	}
+}
+
+.intro-body {
+	display:table-cell;
+	vertical-align:middle;
+	
+}
+
+.brand-heading {
+	font-size:map-get($heading-font-size, h1);
+	@include tablet{
+		font-size:100px;
+	}
+}
+
+.intro-text {
+	font-size:18px;
+	@include tablet {
+		font-size:25px;
+	}
+}
+
+//content section
+.content-section {
+	padding:80px 0 40px 0;
+}
+
+//Icon blocks
+.block-icon-left {
+	overflow:auto;
+	 h1, h2, h3, h4, h5, h6 {
+	 	margin:0 0 10px 0;
+	 	padding:0;
+	 	font-size:map-get($heading-font-size, h5);
+	 }
+	 .icon {
+	 	float:left;
+	 	width:30%;
+	 	margin-top:10px;
+	 }
+	 .icon-content {
+	 	float:left;
+	 	width:70%;
+	 }
+}
+
+//who section 
+
+.who-section {
+	width:100%;
+	padding:50px 0;
+	color:$custom-light;
+	background: url(../img/downloads-bg.webp) no-repeat center center scroll, $custom-dark;
+	background-size:cover;
+	@include tablet {
+		padding:100px 0;
+	}
+}
+
+//client logos
+#clients {
+	padding-bottom:80px;
+	img {
+		margin-right:30px;
+	}
+}
+
+//contact section
+#contact {
+	background-color:$custom-dark;
+	color:$custom-light;
+	padding-bottom:80px;
+}
+
+footer {
+	margin-top:10px;
+	padding-top:30px;
+	min-height:80px;
+}
+
+.page-scroll {
+	transition-property: transform;
+	transition-duration: 1s;
+}

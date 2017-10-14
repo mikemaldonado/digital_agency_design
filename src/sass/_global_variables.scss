@@ -1,0 +1,10 @@
+$custom-light:#f4f4f4;
+$custom-dark: #333;
+
+$brand-primary: #26a5d3;
+$navbar-default-bg: $custom-dark;
+$navbar-default-link-color: $custom-light;
+$navbar-default-link-hover-color: darken($navbar-default-link-color, 15%);
+$navbar-default-link-active-color: lighten($navbar-default-link-color, 15%);
+$navbar-default-link-hover-bg: rgba(255,255,255,0.2);
+$navbar-default-toggle-icon-bar-bg: $custom-light;

@@ -1,0 +1,44 @@
+@mixin phone {
+	@media only screen and (min-width: $screen-phone) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media only screen and (min-width: $screen-tablet) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media only screen and (min-width: $screen-desktop) {
+		@content;
+	}
+}
+
+
+
+@mixin button-extension() {
+	text-decoration:none;
+	text-transform:uppercase;
+	transition:all .3s ease;
+	font-weight:$btn-font-weight;
+	@include tablet {
+		display:inline-block;
+	}
+	
+}
+
+@mixin grid-images($qty, $margin) {
+	@debug $margin;
+	@if unitless($margin) {
+		@warning "Assuming #{$margin} to be in percent";
+		$margin: 1% * $margin;
+	}
+	
+	width: (100% - ($qty * $margin))/$qty;
+	&:nth-last-child(n+2) {
+	margin-right:$margin;
+	margin-bottom:$margin;	
+	}
+}

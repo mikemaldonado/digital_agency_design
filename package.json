@@ -1,0 +1,26 @@
+{
+  "name": "digital-agency",
+  "version": "1.0.0",
+  "description": "Design page for an arbitrary digital agency site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikemaldonado/digital_agency_design.git"
+  },
+  "keywords": [
+    "digital",
+    "agency",
+    "design",
+    "clients"
+  ],
+  "author": "Mike Maldonado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikemaldonado/digital_agency_design/issues"
+  },
+  "homepage": "https://github.com/mikemaldonado/digital_agency_design#readme",
+  "devDependencies": {}
+}
